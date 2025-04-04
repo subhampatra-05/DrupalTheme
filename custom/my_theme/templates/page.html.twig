@@ -7,9 +7,18 @@
     <js-placeholder token="{{ placeholder_token }}">
   </head>
   <body>
+
     <header>
       {{ page.header }}
     </header>
+
+    <nav>
+      <ul>
+        <li><a href="/" title="Go to Homepage">🏠 Home</a></li>
+        {# Existing menu links here... #}
+      </ul>
+    </nav>
+    
 
     {% if page.top_banner %}
       <div class="top-banner">
