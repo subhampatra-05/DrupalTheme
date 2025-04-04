@@ -1,6 +1,6 @@
-name: My Theme
+name: My_Theme
 type: theme
-description: 'A clean and responsive Drupal 10 theme without frameworks.'
+description: 'A clean and responsive Drupal 10 custom theme.'
 core_version_requirement: ^10
 base theme: olivero
 
