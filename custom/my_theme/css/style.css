@@ -247,4 +247,31 @@ nav ul li a {
     background-color: #1f2937;
     color: white;
   }
+  /* === Buttons (General Styling) === */
+button,
+input[type="submit"],
+a.button-link {
+  font-size: 1.1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #2563eb;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* === On Hover: Background Darker, Text Turns White === */
+button:hover,
+input[type="submit"]:hover,
+a.button-link:hover {
+  background-color: #1d4ed8;
+  color: #ffffff;
+}
+nav ul li a:hover {
+    background-color: #1f2937;
+    color: #ffffff;
+  }
   
