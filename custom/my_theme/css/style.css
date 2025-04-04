@@ -236,4 +236,15 @@ nav ul li a {
     background-color: #1f2937;
     color: white;
   }
+  nav ul li a {
+    font-weight: 600;
+    padding: 0.6rem 1rem;
+    border-radius: 6px;
+    transition: background 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    background-color: #1f2937;
+    color: white;
+  }
   

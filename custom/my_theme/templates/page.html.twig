@@ -14,10 +14,13 @@
 
     <nav>
       <ul>
-        <li><a href="/" title="Go to Homepage">🏠 Home</a></li>
-        {# Existing menu links here... #}
+        <li><a href="{{ path('<front>') }}" title="Go to Homepage">🏠 Home</a></li>
+        {% for item in menu.main %}
+          <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+        {% endfor %}
       </ul>
     </nav>
+    
     
 
     {% if page.top_banner %}
