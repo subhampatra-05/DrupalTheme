@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <head-placeholder token="{{ placeholder_token }}">
     <title>{{ head_title }}</title>
@@ -7,25 +7,33 @@
     <js-placeholder token="{{ placeholder_token }}">
   </head>
   <body>
-
     <header>
+      {{ page.header }}
+    </header>
+
+    {% if page.top_banner %}
       <div class="top-banner">
         {{ page.top_banner }}
       </div>
-      <div class="logo">
-        {{ page.logo }}
-      </div>
+    {% endif %}
+
+    {% if page.primary_menu %}
       <nav>
-        {{ page.navigation }}
+        {{ page.primary_menu }}
       </nav>
-    </header>
+    {% endif %}
 
-    <div class="layout">
-      <aside class="sidebar-left">
-        {{ page.sidebar_left }}
-      </aside>
+    <div class="container">
+      {% if page.sidebar %}
+  <aside class="sidebar">
+    <nav class="sidebar-nav">
+      {{ page.sidebar }}
+    </nav>
+  </aside>
+{% endif %}
 
-      <main class="content">
+
+      <main class="main-content">
         {{ page.content }}
       </main>
     </div>

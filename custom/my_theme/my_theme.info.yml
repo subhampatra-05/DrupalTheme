@@ -1,17 +1,16 @@
-name: 'My Theme'
+name: My Theme
 type: theme
-description: 'Custom Drupal 10 theme built for internship'
+description: 'A clean and responsive Drupal 10 theme without frameworks.'
 core_version_requirement: ^10
-package: Custom
 base theme: olivero
 
 libraries:
   - my_theme/global-styling
 
 regions:
+  header: 'Header'
   top_banner: 'Top Banner'
-  logo: 'Logo'
-  navigation: 'Navigation Menu'
-  sidebar_left: 'Left Sidebar'
+  primary_menu: 'Primary Menu'
+  sidebar: 'Sidebar'
   content: 'Content'
   footer: 'Footer'

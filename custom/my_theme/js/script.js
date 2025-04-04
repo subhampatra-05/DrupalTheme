@@ -1,1 +1,1 @@
-console.log("Custom theme JS loaded.");
+console.log("Theme JS is loaded.");

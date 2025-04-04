@@ -1,30 +1,193 @@
 body {
-    font-family: sans-serif;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
     margin: 0;
     padding: 0;
   }
-  header, footer {
-    background: #333;
-    color: white;
-    padding: 1em;
+  
+  header {
+    background: #1e3d59;
+    color: #fff;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
   }
-  .layout {
+  
+  .site-logo {
+    height: 50px;
+  }
+  
+  .top-banner {
+    background-color: #ff6e40;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.25rem;
+  }
+  
+  nav ul {
+    background-color: #34495e;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0.5rem;
+  }
+  
+  nav ul li {
+    margin: 0 1rem;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .container {
     display: flex;
     flex-wrap: wrap;
+    margin: 1rem;
   }
-  .sidebar-left {
-    width: 25%;
-    background: #f4f4f4;
-    padding: 1em;
+  
+  .sidebar {
+    flex: 1 1 25%;
+    background: #fff3cd;
+    padding: 1rem;
+    min-width: 200px;
+    border: 1px solid #ffeeba;
+    border-radius: 6px;
   }
-  .content {
-    width: 75%;
-    padding: 1em;
+  
+  .main-content {
+    flex: 1 1 70%;
+    background: white;
+    padding: 1.5rem;
+    margin-left: 1rem;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
   }
+  
+  footer {
+    background-color: #1e3d59;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+  
+  /* Sidebar blocks */
+  .sidebar .block {
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    background: #fff;
+    border-left: 4px solid #ff6e40;
+    border-radius: 6px;
+  }
+  
+  /* Sidebar links */
+  .sidebar a {
+    display: block;
+    padding: 0.25rem 0.5rem;
+    color: #1e3d59;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .sidebar a:hover {
+    background-color: #ffe8d6;
+    border-radius: 4px;
+  }
+  
   @media (max-width: 768px) {
-    .sidebar-left,
-    .content {
-      width: 100%;
+    .container {
+      flex-direction: column;
+    }
+  
+    .main-content {
+      margin-left: 0;
     }
   }
   
+  /* Drupal admin toolbar tweaks */
+#toolbar-administration {
+    background: #1e3d59;
+    color: #fff;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  #toolbar-bar {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+  }
+  
+  .toolbar-menu .toolbar-icon {
+    color: white;
+  }
+  
+  /* Hover dropdown effect */
+  .toolbar-menu li {
+    position: relative;
+  }
+  
+  .toolbar-menu li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #34495e;
+    border: 1px solid #444;
+    padding: 0;
+    margin: 0;
+    z-index: 999;
+    min-width: 200px;
+  }
+  
+  .toolbar-menu li:hover > ul {
+    display: block;
+  }
+  
+  .toolbar-menu li ul li {
+    display: block;
+    padding: 0;
+  }
+  
+  .toolbar-menu li ul li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .toolbar-menu li ul li a:hover {
+    background-color: #2c3e50;
+  }
+/* Toolbar sidebar mode fix: vertical layout */
+.toolbar-vertical .toolbar-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    padding: 0.5rem 0;
+  }
+  
+  .toolbar-vertical .toolbar-menu li {
+    margin: 0;
+  }
+  
+  .toolbar-vertical .toolbar-menu a {
+    display: block;
+    padding: 0.5rem 1rem;
+    background: #2c3e50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.2s ease;
+  }
+  
+  .toolbar-vertical .toolbar-menu a:hover {
+    background: #1abc9c;
+  }
+    
