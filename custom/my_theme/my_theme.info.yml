@@ -1,0 +1,17 @@
+name: 'My Theme'
+type: theme
+description: 'Custom Drupal 10 theme built for internship'
+core_version_requirement: ^10
+package: Custom
+base theme: olivero
+
+libraries:
+  - my_theme/global-styling
+
+regions:
+  top_banner: 'Top Banner'
+  logo: 'Logo'
+  navigation: 'Navigation Menu'
+  sidebar_left: 'Left Sidebar'
+  content: 'Content'
+  footer: 'Footer'

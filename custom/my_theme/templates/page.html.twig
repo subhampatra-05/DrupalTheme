@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <head-placeholder token="{{ placeholder_token }}">
+    <title>{{ head_title }}</title>
+    <css-placeholder token="{{ placeholder_token }}">
+    <js-placeholder token="{{ placeholder_token }}">
+  </head>
+  <body>
+
+    <header>
+      <div class="top-banner">
+        {{ page.top_banner }}
+      </div>
+      <div class="logo">
+        {{ page.logo }}
+      </div>
+      <nav>
+        {{ page.navigation }}
+      </nav>
+    </header>
+
+    <div class="layout">
+      <aside class="sidebar-left">
+        {{ page.sidebar_left }}
+      </aside>
+
+      <main class="content">
+        {{ page.content }}
+      </main>
+    </div>
+
+    <footer>
+      {{ page.footer }}
+    </footer>
+
+    <js-bottom-placeholder token="{{ placeholder_token }}">
+  </body>
+</html>
