@@ -275,3 +275,51 @@ nav ul li a:hover {
     color: #ffffff;
   }
   
+  /* === Navigation Flex Styling === */
+.main-nav {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+  
+  /* === Navigation List === */
+  .nav-list {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* === Search Form Styling === */
+  .search-form {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  
+  .search-form input[type="text"] {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+  
+  .search-form button {
+    padding: 0.5rem 1rem;
+    background-color: #2563eb;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .search-form button:hover {
+    background-color: #1d4ed8;
+  }
+  

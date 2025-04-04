@@ -12,14 +12,19 @@
       {{ page.header }}
     </header>
 
-    <nav>
-      <ul>
+    <nav class="main-nav">
+      <ul class="nav-list">
         <li><a href="{{ path('<front>') }}" title="Go to Homepage">🏠 Home</a></li>
-        {% for item in menu.main %}
-          <li><a href="{{ item.url }}">{{ item.title }}</a></li>
-        {% endfor %}
       </ul>
+    
+      <form action="/search" method="get" class="search-form">
+        <input type="text" name="keys" placeholder="Search..." />
+        <button type="submit" title="Search">
+          🔍
+        </button>
+      </form>
     </nav>
+    
     
     
 
