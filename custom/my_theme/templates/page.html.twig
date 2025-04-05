@@ -54,6 +54,9 @@
   </aside>
 {% endif %}
 
+{% if breadcrumb %}
+  <nav class="breadcrumb">{{ breadcrumb }}</nav>
+{% endif %}
 
       <main class="main-content">
         {{ page.content }}
@@ -61,9 +64,16 @@
     </div>
 
     <footer>
+      
       {{ page.footer }}
+      {% if page.footer_menu %}
+  <div class="footer-nav">{{ page.footer_menu }}</div>
+{% endif %}
+
     </footer>
 
     <js-bottom-placeholder token="{{ placeholder_token }}">
+      <button id="backToTop" title="Back to top">↑</button>
+
   </body>
 </html>
