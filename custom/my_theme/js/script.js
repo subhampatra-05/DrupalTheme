@@ -1,9 +1,12 @@
 console.log("Theme JS is loaded.");
 // Back to Top Button
-window.onscroll = function () {
+
+  
+
+  window.onscroll = function () {
     const btn = document.getElementById("backToTop");
     if (btn) {
-      btn.style.display = window.scrollY > 300 ? "block" : "none";
+      btn.style.display = window.scrollY > 300 ? "flex" : "none";
     }
   };
   
